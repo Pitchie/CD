@@ -22,12 +22,12 @@ public class CreationCD extends HttpServlet{
 
     String acceuil;
     String message;
-    acceuil = " Retour page acceuil! <a href=\"creerCD.jsp\">Ajout d'album</a>";
+    acceuil = " Retour page acceuil! <a href=\"creerAlbum.jsp\">Ajout d'album</a>";
     
     if ( titre.trim().isEmpty()) {
-        message = "Erreur - Vous n'avez pas rempli tous les champs obligatoires. <br> <a href=\"creerCD.jsp\">Cliquez ici</a> pour accéder au formulaire de création des Albums.";
+        message = "Erreur - Vous n'avez pas rempli tous les champs obligatoires. <br> <a href=\"creerAlbum.jsp\">Cliquez ici</a> pour accéder au formulaire de création des Albums.";
     } else {
-        message = "CD créé avec succès ! <br> <a href=\"gererCD.jsp\">Cliquez ici</a> pour accéder à la gestion des Albums.";
+        message = "CD créé avec succès ! <br> <a href=\"gererAlbum.jsp\">Cliquez ici</a> pour accéder à la gestion des Albums.";
     }
 
     Album album = new Album();
